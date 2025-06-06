@@ -1,11 +1,11 @@
 ## Example Config file
-baseURL: "https://example.com"
-theme: "terminalcv"
-title: "terminalcv"
+baseURL: "https://cloak.megacorp.industries"
+theme: "hugo-theme-terminalcv"
+title: "CV Megacorp Industries"
 
 params:
   version: "2.0.0"
-  description: "My terminal cv"
+  description: "Terminal CV"
   prompt:
     core:
       text: "megaman@megacorp.industries"
