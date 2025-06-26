@@ -1,5 +1,4 @@
-## Example Config file
-baseURL: "https://cloak.megacorp.industries"
+baseURL: "https://cv.megacorp.industries"
 theme: "hugo-theme-terminalcv"
 title: "CV Megacorp Industries"
 
@@ -8,20 +7,18 @@ params:
   description: "Terminal CV"
   prompt:
     core:
-      text: "megaman@megacorp.industries"
+      text: "user@megacorp"
       color: "chartreuse"
       before: "["
       beforeColor: "red"
       after: '\]'
       afterColor: "red"
-      # separator: '-'
     separator:
       text: "-"
-      # color:
     path:
       before: "["
       beforeColor: "red"
-      text: "/home/megaman"
+      text: "~/"
       color: "cyan"
       after: '\]'
       afterColor: "red"
@@ -29,12 +26,6 @@ params:
       text: ": "
       color: "orange"
 
-  # promptColor: grey
-  # promptSimbols: ":~$"
-  # promptSimbolsColor: grey
-  # startxLocation: https://example.com
-  # useLess: true
-  #exitLocation: "about:blank"
   exitMessage: "[Session completed, the browser window can be safely closed]"
   source: true
   #use a ‎ (blank character) if your first character of the ascii art is a whitespace
@@ -82,8 +73,6 @@ params:
 
     Boot Complete, accepting user input.
   whois:
-    # settings:
-    #   useLess: true
     details:
       name: "Ben harris"
       profession: "Systems Admin"
@@ -91,21 +80,16 @@ params:
       email: "ben.r.harris@protonmail.com"
       homelink: "https://megacorp.industries"
       description: |
-        Systems administrator who is interested in all things technology
+        Systems administrator who is interested in all things technology!
 
         Passionate about solving problems with technology (especially using free and open source solutions)
 
   social:
-    # settings:
-    #   useLess: true
-    #   hideName: true
     details:
       - name: "github"
         url: "https://github.com/rapture-mc"
 
   work:
-    # settings:
-    #   useLess: true
     details:
       - jobTitle: ICT Systems Engineer
         color: red
@@ -157,68 +141,42 @@ params:
         description: Networking is a must for a systems administrator. You can't build a system without a network!
 
   softskills:
-    # settings:
-    #   useLess: true
     details:
       - name: SoftSkill 1
         color: red
         percentage: 80
-        #description:
 
       - name: SoftSkill 2
-        #color:
         percentage: 90
         description: Description
 
   languages:
-    # settings:
-    #   useLess: true
     details:
       - name: English
         color: Blue
         percentage: 100
-        description: Can speak fluent English (with an aussie accent)
+        description: Can speak fluent English (with a bogan accent...)
 
   projects:
-    # settings:
-    #   useLess: true
     details:
       - title: Ansible FortiGate Deployments
         color: red
         date: Since 2019
         description: |
           Automated the deployment of FortiGate's using Ansible.
-
           - Creating Ansible roles to modularize common deployment options.
           - Improved reliability of FortiGate deployments
 
+      - title: Completely Immutable Environment
+        color: red
+        date: Since 2023
+        description: |
+          Successfully transformed entire homelab into a declarative environment.
+          - NixOS for desktop, server and cloud deployments from inception to management
+          - Ansible for networking automation
+
   certifications:
-    # settings:
-    #   useLess: true
     details:
       - certName: Certificate III in IT
         university: Charles Darwin University 
         date: 2019
-
-  misc:
-    # settings:
-    #   useLess: true
-    commandName: newcommand
-    title: "This Section can have a different command name"
-    titleColor: teal
-    content: |
-      Here the title and the content can have different colors
-      The content can be multi
-
-      line
-
-      And spaces       will be respected as well
-      This section will have the default command: misc
-      but you can name it something else with the property
-      commandName: <String>
-      Give it a shot and try and uncomment the line 
-      commandName: newcommand
-      now instead of misc you can execute the newcommand for this section
-      Auto completion will know it too! :D
-
-    contentColor: orange
