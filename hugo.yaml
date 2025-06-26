@@ -1,5 +1,5 @@
 baseURL: "https://cv.megacorp.industries"
-theme: "hugo-theme-terminalcv"
+theme: "terminalcv"
 title: "CV Megacorp Industries"
 
 params:
